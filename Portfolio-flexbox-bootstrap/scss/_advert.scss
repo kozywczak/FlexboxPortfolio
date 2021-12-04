@@ -1,0 +1,25 @@
+#Advert{
+    margin: 3% 20%;
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        text-align: right;
+        text-decoration: underline;
+        margin-top: 3%;
+        margin-right: 5%;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+        margin: 8% 10%;
+        h1{
+            font-size: 120%;
+        }
+
+        h2{
+            font-size: 100%;
+        }
+      }
+}

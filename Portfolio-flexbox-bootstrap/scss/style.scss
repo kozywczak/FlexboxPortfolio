@@ -1,0 +1,54 @@
+@import "_header.scss";
+@import "_variables.scss";
+@import "_banner.scss";
+@import "_advert.scss";
+@import "_main.scss";
+@import "_features.scss";
+@import "_footer.scss";
+
+body{
+    background-color: $primaryBackground;
+    height: 200vh;
+}
+
+.section-title{
+  width: 100%;
+  padding: 2%;
+  background-color: $secondayBackground;
+  text-align: center;
+  margin: 2% 0;
+  color: $secondaryText;
+
+  .section-heading{
+  font-size: 200%;
+  font-weight: 600;
+      
+  }
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 30%;
+    border-radius: 5%;
+    border: 0px;
+    padding: 0.8% 1%;
+    background-color: rgb(212, 208, 208);
+    right: 0%;
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    #btn-back-to-top {
+        padding: 2% 2.3%;
+      }
+
+      .section-title{
+        padding: 5%;
+        
+      }
+    
+      .smaller-phone{
+        font-size: 120%;
+      }
+  }

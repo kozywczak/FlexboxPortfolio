@@ -1,0 +1,110 @@
+header{
+    @import "_variables.scss";
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 18%;
+    -webkit-box-shadow: 0px -3px 24px 9px #575757; 
+    box-shadow: 0px -3px 24px 9px #575757;
+
+
+
+        .darkUnderline{
+            color: $secondaryText;
+            height: 2px;
+            width: 70%;
+        }
+   
+        .title{
+            color: $primaryDarkText;
+            font-weight: bold;
+
+ 
+        }
+        
+        .author{
+            color: $secondaryText;
+        }
+        
+        li{
+            display: inline-block;
+        }
+
+
+        #Nav-bar{
+
+            a{
+                font-size: 150%;
+                color: $primaryDarkText;
+                transition: transform 1s;
+
+            }
+            a:hover{
+                transform: scale(1.2);
+            }
+
+
+          
+
+            .hover-underline-animation {
+                display: inline-block;
+                position: relative;
+                color: #0087ca;
+              }
+              
+              .hover-underline-animation:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #0087ca;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+              }
+              
+              .hover-underline-animation:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+              }
+
+              
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            flex-direction: column;
+            padding: 3% 10%;
+
+                h2, h3{
+                    text-align: center;
+                }
+
+                hr{
+                    margin: 3% auto;
+                }
+
+                a{
+                    margin-top: 2%;
+                    padding: 10px;
+                    background-color: $primaryDarkText;
+                    color: white !important;
+                    border-radius: 5px;
+                }
+
+                ul{
+                    padding: 0;
+                }
+          }
+
+          @media only screen and (max-width: 1200px) {
+
+            padding: 1.5% 10%;
+          }
+}
+
